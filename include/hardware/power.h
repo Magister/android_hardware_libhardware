@@ -74,6 +74,7 @@ typedef enum {
 
 typedef enum {
     POWER_FEATURE_DOUBLE_TAP_TO_WAKE = 0x00000001,
+    POWER_FEATURE_EDGE_TAP           = 0x00000002,
     POWER_FEATURE_SUPPORTED_PROFILES = 0x00001000
 } feature_t;
 
@@ -293,6 +294,11 @@ typedef struct power_module {
      *
      *    Enabling/Disabling this feature will allow/disallow the system
      *    to wake up by tapping the screen twice.
+     *
+     * FEATURE_EDGE_TAP
+     *
+     *    Enabling/Disabling this feature will allow/disallow the system
+     *    to react to edge tapping.
      *
      * availability: version 0.3
      *
